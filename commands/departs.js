@@ -14,7 +14,7 @@ module.exports = class Departs extends Command {
         let args = message.content.split(' ');
         args.splice(0,1);
         let param = args.join('%20');
-        let paramString = param.replaceAll('%20', ' ');
+        let paramString = param.split('%20').join(' ');
 
         request('https://' + process.env.NAVITIA_TOKEN + '@api.sncf.com/v1/coverage/sncf/pt_objects?q=' + param + '&type=stop_area',
             {'json': true},
