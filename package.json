@@ -1,0 +1,13 @@
+{
+  "name": "train-bot",
+  "version": "1.0.0",
+  "description": "A Discord Bot to get train hours",
+  "main": "index.js",
+  "author": "Maxime Eychenne",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
+    "request": "^2.88.2"
+  }
+}
